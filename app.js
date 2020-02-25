@@ -30,7 +30,7 @@ app.use((error, req, res, next) => {
 })
 
 // Mongoose connect to mongodb
-mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net/?retryWrites=true&w=majority')
 .then(result => {
     app.listen(8080)
 }).catch(err => console.log(err))
