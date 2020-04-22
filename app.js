@@ -30,7 +30,7 @@ app.use((error, req, res, next) => {
 })
 
 // Mongoose connect to mongodb
-mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net/posts?retryWrites=true&w=majority', {useUnifiedTopology:true, useNewURLParser:true})
 .then(result => {
     app.listen(process.env.PORT || 8080)
 }).catch(err => console.log(err))
