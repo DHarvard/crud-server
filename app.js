@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 // Routes
 const recipeRoutes = require('./routes/recipes')
-const authRoutes = require('./routes/auth')
+// const authRoutes = require('./routes/auth')
 
 const app = express()
 
@@ -19,14 +19,14 @@ app.use((req, res, next) => {
 
 // Use routes
 app.use('/recipes', recipeRoutes)
-app.use('/auth', authRoutes)
+// app.use('/auth', authRoutes)
 
 // Use errors
 app.use((error, req, res, next) => {
     console.log(error)
     const status = error.statusCode || 500
     const message = error.message
-    res.status(status).json({ message: message, data: data })
+    res.status(status).json({ message: message})
 })
 
 // Mongoose connect to mongodb
@@ -34,3 +34,4 @@ mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net
 .then(result => {
     app.listen(8080)
 }).catch(err => console.log(err))
+app.listen(8080)
