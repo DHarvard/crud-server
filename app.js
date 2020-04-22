@@ -32,6 +32,5 @@ app.use((error, req, res, next) => {
 // Mongoose connect to mongodb
 mongoose.connect('mongodb+srv://darrinbh:1kingfred@crud-server-xnhuy.mongodb.net/?retryWrites=true&w=majority')
 .then(result => {
-    app.listen(8080)
+    app.listen(process.env.PORT)
 }).catch(err => console.log(err))
-app.listen(8080)
