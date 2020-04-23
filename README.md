@@ -23,7 +23,7 @@ I am not really sure what to do here. I don't know how to use mongoDB very well.
 
 ### Your app will be deployed to production using some service like Heroku, Digital Ocean, etc.
 This is the link to my Heroku app but it doesn't seem to be working. I used the auto-deploy method in the settings and then linked my github repo for the app to Heroku.
-[View Heroku app](https://thawing-chamber-73654.herokuapp.com/)
+[View Heroku app](https://thawing-chamber-73654.herokuapp.com/recipes/posts)
 
 ### All of your source code will be properly uploaded to GitHub
  This is my Github repo. [View Github repo](https://github.com/DHarvard/crud-server)
